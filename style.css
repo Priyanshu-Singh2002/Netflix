@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/image/B_G.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 78px;
+    position: relative;
+    z-index: 10;
+}
+
+
+#NB {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    min-height: 30px;
+    padding: 1px 12px;
+    cursor: pointer;
+    border: 1px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#NB:hover {
+    background-color: rgb(181, 63, 63);
+}
+
+.language-select {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(26, 25, 25, 0.8);
+    border: 1px solid dimgray;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: white;
+    position: relative;
+    top: 3px;
+    right: 7px;
+}
+
+.language-select select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.language-select option {
+    color: black;
+    /* using this only we are able to see the option's color */
+}
+
+.main .layer {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.70;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.mid_head {
+    height: calc(100% - 78px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 0 20px;
+
+}
+
+.common {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.S1 {
+    margin-bottom: 1.3rem;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.S2 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.S3 {
+    margin-bottom: 1rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.field input {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 110px 16px 15px;
+    background-color: rgba(46, 46, 46, 0.3);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 4px;
+    color: white;
+}
+
+.field>button {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 13px 24px;
+    cursor: pointer;
+    border: none;
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.field>button:hover {
+    background-color: rgb(187, 52, 52);
+}
+
+.separation {
+    height: 4px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 30px;
+}
+
+.first {
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.text-part {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding-left: 25px;
+}
+
+.img-part {
+    position: relative;
+}
+
+.img-part img {
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.img-part video {
+    max-width: 555px;
+    position: absolute;
+    top: 70px;
+    right: 7px;
+}
+
+section>div :nth-child(1) {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+section>div :nth-child(2) {
+    font-size: 16px;
+}
+
+.fourth img {
+    width: 400px;
+    padding: 70px 70px 70px 0px;
+}
+
+.faq {
+    color: #f0f8ff;
+    padding-top: 20px;
+    max-width: 75vw;
+    margin: auto;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.faq>span {
+    font-weight: 600;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 0 10px 0;
+}
+
+.faq_card {
+    background-color: #1f1e1e;
+    margin: 7px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: #b3b3b3;
+    font-size: 18px;
+    padding: 55px 0px 60px 260px;
+}
+
+.footer {
+    max-width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 0;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+footer a {
+    color: #b3b3b3;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.last{
+    font-size: 16px;
+}

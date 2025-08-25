@@ -225,7 +225,7 @@ section>div :nth-child(2) {
 footer{
     color: #b3b3b3;
     font-size: 18px;
-    padding: 55px 0px 60px 260px;
+    padding: 55px 185px;
 }
 
 .footer {
@@ -249,4 +249,33 @@ footer a {
 
 .last{
     font-size: 16px;
+}
+
+@media (max-width:900px){
+.field{
+    flex-direction: column;
+}
+.first{
+    flex-direction: column;
+    padding: 10px;
+}
+footer{
+    padding: 55px 105px;
+}
+img{
+    padding: 0  0  0 100px;
+}
+video{
+        padding: 0  0  0 100px;
+}
+.first .text-part{
+   justify-items : center;
+}
+section>div :nth-child(1) {
+    font-size: 28px;
+    font-weight: bolder;
+}
+section>div :nth-child(2) {
+    font-size: 13px;
+}
 }
